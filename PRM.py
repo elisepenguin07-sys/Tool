@@ -36,7 +36,7 @@ if uploaded_file:
 
         # 自訂欄位順序
         desired_order = [
-            "New", "To be fixed", "To be verified", "To be comfirmed",
+            "New", "Analysis (PRM)", "To be fixed", "To be verified", "To be comfirmed",
             "Resolved", "Feedback", "Unfinished Closed", "Closed", "Total"
         ]
         final_columns = [col for col in desired_order if col in pivot_df.columns]
