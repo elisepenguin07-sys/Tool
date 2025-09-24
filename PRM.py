@@ -17,7 +17,7 @@ if uploaded_file:
     df.columns = df.columns.str.strip()
 
     # 指定欄位名稱（根據你提供的）
-    bug_column = "Bug's category 0910"  # ← 根據你的資料名稱
+    bug_column = "Bug's category"  # ← 根據你的資料名稱
     status_column = "狀態"
 
     if bug_column in df.columns and status_column in df.columns:
@@ -43,7 +43,7 @@ if uploaded_file:
         pivot_df = pivot_df[final_columns]
 
         # 顯示結果
-        st.subheader("📊 統計結果")
+        st.subheader("📊 Result")
         st.dataframe(pivot_df)
 
         # 匯出按鈕
